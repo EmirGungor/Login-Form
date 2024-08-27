@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --color-one: #441d0f;
+  --color-two: #f65829;
+  --color-three: #fed346;
+  --color-four: #e7dbd5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  background: url("/background.png");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(50px);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+  background-color: #fff3ee;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.container .right h1 {
+  color: var(--color-one);
+  font-size: 2rem;
+}
+
+.container .btns {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 3rem;
+  margin-bottom: 2rem;
+}
+
+.container button {
+  border: none;
+  outline: none;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 14px 1.5rem;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container button:hover {
+  transform: translateY(-5px);
+}
+
+.container .btns button:nth-child(1) {
+  background-color: var(--color-two);
+}
+
+.container .btns button:nth-child(2) {
+  background-color: var(--color-three);
+  color: initial;
+}
+
+button.signUp {
+  font-size: 1.1rem;
+  margin-block-end: 0.6rem;
+  background-color: var(--color-two);
+}
+
+.container .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.container .right h1{
+    margin-bottom: 2rem;
+}
+
+
+.container .left img {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+form > div {
+  margin-bottom: 1rem;
+}
+
+body > div > div.right > form > div.last {
+    margin-bottom: .4rem;
+}
+
+form > div > input {
+  border: none;
+  outline: none;
+  background-color: var(--color-four);
+  width: 100%;
+  height: 32px;
+  border-radius: 50px;
+  padding-inline: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  height: fit-content;
+  margin-right: .4rem;
+}
+
+div.last {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.container label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  color: var(--color-one);
+}
+
+form p.text {
+  font-size: 0.8rem;
+}
